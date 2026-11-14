@@ -11,8 +11,8 @@
     <script>
       if (/^\/GrabLine(\/|$)/i.test(location.pathname)) {
         location.replace(
-          "https://grabline.github.io/GrabLine" +
-            location.pathname.replace(/^\/GrabLine/i, "") +
+          "https://grabline.github.io" +
+            location.pathname.replace(/^\/GrabLine\/?/i, "/") +
             location.search +
             location.hash
         );
@@ -26,6 +26,6 @@
   </head>
   <body>
     <p>Page not found. Looking for GrabLine? It is now at
-      <a href="https://grabline.github.io/GrabLine/">grabline.github.io/GrabLine</a>.</p>
+      <a href="https://grabline.github.io/">grabline.github.io</a>.</p>
   </body>
 </html>
